@@ -1,17 +1,15 @@
-name: "Lambda deployment"
+name: "Create Application"
 on:
   push:
     branches:
     - master
 
 jobs:
-  tests_deployment:
+  New_Application:
     runs-on: ubuntu-latest
     steps:
-
     - name: "Checkouts out"
       uses: actions/checkout@v4
-
 
     - name: "LOGIN TO DOCKERHUB"
       uses: docker/login-action@v3
